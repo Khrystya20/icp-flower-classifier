@@ -8,6 +8,9 @@ The project consists of two primary canisters:
   It provides `classify()` and `classify_query()` endpoints for the frontend code to call.
   The former endpoint is used for replicated execution (running on all nodes) whereas the latter runs only on a single node.
 - the frontend canister contains the Web assets such as HTML, JS, CSS that are served to the browser.
+  A minimal static web interface (HTML/CSS/JS):
+  - Allows image upload;
+  - Displays the classification results with scores.
 
 This example uses Wasm SIMD instructions that are available in `dfx` version `0.20.2-beta.0` or newer.
 
@@ -49,3 +52,12 @@ Each prediction includes a confidence score.
 - Lightweight, optimized model for execution under instruction limits.
 - Fast and interactive frontend.
 - Example of end-to-end Rust + WebAssembly + AI on ICP.
+
+## Deployed Canisters
+
+URLs:
+- Frontend canister via browser:
+https://hay6z-oiaaa-aaaag-at75q-cai.icp0.io/
+
+- Backend canister via Candid interface:
+https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=hhzyn-dqaaa-aaaag-at75a-cai
